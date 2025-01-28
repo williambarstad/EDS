@@ -1,0 +1,614 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "3bb7d61c-4221-423f-9dfc-9e9d712b705c",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "Set Cart Attributes": {
+        "position": {
+          "x": 1311.2,
+          "y": 327.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "Call Center Fallback Prompt": {
+        "position": {
+          "x": 951.2,
+          "y": 674.4
+        },
+        "isFriendlyName": true
+      },
+      "EDI Drill": {
+        "position": {
+          "x": 692.8,
+          "y": 715.2
+        },
+        "isFriendlyName": true
+      },
+      "Drill Result": {
+        "position": {
+          "x": 453.6,
+          "y": 707.2
+        },
+        "isFriendlyName": true
+      },
+      "AuthStub": {
+        "position": {
+          "x": 369.6,
+          "y": -23.2
+        },
+        "isFriendlyName": true,
+        "children": [
+          "AuthStub-RNmKoq1gAu"
+        ],
+        "dynamicParams": [],
+        "isSplitModule": true
+      },
+      "AuthStub-RNmKoq1gAu": {
+        "position": {
+          "x": 369.6,
+          "y": -23.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": [],
+        "isSplitModule": true
+      },
+      "WelcomePrompt": {
+        "position": {
+          "x": 694.4,
+          "y": -35.2
+        },
+        "isFriendlyName": true
+      },
+      "WelcomeBackPrompt": {
+        "position": {
+          "x": 404,
+          "y": 211.2
+        },
+        "isFriendlyName": true
+      },
+      "Lex - OrderSupplies": {
+        "position": {
+          "x": 1016.8,
+          "y": 263.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "EDSSupplyOrders",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "EDSSupplyOrders"
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "CustomerID": false,
+          "cart": false,
+          "total": false
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "EDSSupplyOrders",
+        "lexV2BotAliasName": "EDSSupplyOrders",
+        "conditionMetadata": [
+          {
+            "id": "30011fc0-ea63-4534-845e-ad5c74c99577",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "OrderSupplies"
+          },
+          {
+            "id": "2d0bd204-f39c-4fbe-af6b-ccfa4746e6de",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ClearCart"
+          },
+          {
+            "id": "9787d71b-8d5d-4e1c-ae17-3ae6088343fa",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Checkout"
+          },
+          {
+            "id": "95a4933b-2b92-4b7f-9393-7b2da43c3d7f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "TechSupport prompt": {
+        "position": {
+          "x": 1000.8,
+          "y": 31.2
+        },
+        "isFriendlyName": true
+      },
+      "Lex - EDSCallCenter": {
+        "position": {
+          "x": 693.6,
+          "y": 248.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "EDSMain",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "EDSCallCenter"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "EDSCallCenter",
+        "lexV2BotAliasName": "EDSMain",
+        "conditionMetadata": [
+          {
+            "id": "3aabbf51-0161-4e1a-9e48-4d379670ee9f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "TechnicalSupportIntent"
+          },
+          {
+            "id": "dde90628-3267-4dc9-9fd0-7cf008a47aa5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "OrderSupplyIntent"
+          },
+          {
+            "id": "80d73a91-5104-4439-9853-bb599e1648b1",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "DrillIntent"
+          },
+          {
+            "id": "bffdd302-1735-4335-ae5e-28d5ae605423",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "a6c119fa-6b17-4ce0-848d-28e988c56e6b": {
+        "position": {
+          "x": 1650.4,
+          "y": 603.2
+        }
+      },
+      "25da475e-2581-4445-842a-5d835f9eccc4": {
+        "position": {
+          "x": 1308.8,
+          "y": -14.4
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "TechnicalSupport"
+          }
+        },
+        "queue": {
+          "text": "TechnicalSupport"
+        }
+      },
+      "Goodbye": {
+        "position": {
+          "x": 1640,
+          "y": 367.2
+        },
+        "isFriendlyName": true
+      },
+      "Transfer to TechSupport": {
+        "position": {
+          "x": 1624.8,
+          "y": -50.4
+        },
+        "isFriendlyName": true
+      },
+      "49843951-95ea-4a31-b628-a7b0906122cb": {
+        "position": {
+          "x": 147.2,
+          "y": 340
+        },
+        "overrideConsoleVoice": false
+      },
+      "3bb7d61c-4221-423f-9dfc-9e9d712b705c": {
+        "position": {
+          "x": 133.6,
+          "y": 140
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "EDS Main Flow Prod",
+    "description": "Development Flow, ver 2",
+    "type": "contactFlow",
+    "status": "published",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "Attributes": {
+          "cart": "$.Lex.SessionAttributes.cart",
+          "total": "$.Lex.SessionAttributes.total"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Set Cart Attributes",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Lex - OrderSupplies",
+        "Errors": [
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "I'm sorry, we didn't understand that. Please try again."
+      },
+      "Identifier": "Call Center Fallback Prompt",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Lex - EDSCallCenter",
+        "Errors": [
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Run an Extra Dimensional Incursion Drill. This feature tests your equipment and returns a status code indicating success. This test should only be run once every six weeks as running it more often could damage your sensitive equipment. Starting test now."
+      },
+      "Identifier": "EDI Drill",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Drill Result",
+        "Errors": [
+          {
+            "NextAction": "Drill Result",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Congratulations! Your equipment is working within optimum parameters."
+      },
+      "Identifier": "Drill Result",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Lex - EDSCallCenter",
+        "Errors": [
+          {
+            "NextAction": "EDI Drill",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "CustomerName": "Wade",
+          "cart": "{}",
+          "total": "0.00"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "AuthStub",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "AuthStub-RNmKoq1gAu",
+        "Errors": [
+          {
+            "NextAction": "WelcomePrompt",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TargetContact": "Current",
+        "CustomerId": "1234"
+      },
+      "Identifier": "AuthStub-RNmKoq1gAu",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "WelcomePrompt",
+        "Errors": [
+          {
+            "NextAction": "WelcomePrompt",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Welcome to EDS, Extra-Dimensional Security. Securing your reality, one dimension at a time."
+      },
+      "Identifier": "WelcomePrompt",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "WelcomeBackPrompt",
+        "Errors": [
+          {
+            "NextAction": "WelcomeBackPrompt",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Welcome back, $.Attributes.CustomerName!"
+      },
+      "Identifier": "WelcomeBackPrompt",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Lex - EDSCallCenter",
+        "Errors": [
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "We currently have new control boxes, rolls of Reflectatine and extra Sensors for sale. Enter Checkout to submit your order.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-west-2:396845391024:bot-alias/I1KG2MXV5P/E9V0ER6T5H"
+        },
+        "LexSessionAttributes": {
+          "CustomerID": "$.CustomerId",
+          "cart": "$.Attributes.cart",
+          "total": "$.Attributes.total"
+        }
+      },
+      "Identifier": "Lex - OrderSupplies",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "Goodbye",
+        "Conditions": [
+          {
+            "NextAction": "Set Cart Attributes",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "OrderSupplies"
+              ]
+            }
+          },
+          {
+            "NextAction": "Set Cart Attributes",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ClearCart"
+              ]
+            }
+          },
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Checkout"
+              ]
+            }
+          },
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Lex - EDSCallCenter",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Relax, we've got you! We're putting you through to one of our top technicians to get you the help you need. Please stand by."
+      },
+      "Identifier": "TechSupport prompt",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "25da475e-2581-4445-842a-5d835f9eccc4",
+        "Errors": [
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "You can tell me to help you with technical support, ordering supplies, or running and EDI Drill.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-west-2:396845391024:bot-alias/DCAEFXKZTF/MXMNTVBA4A"
+        }
+      },
+      "Identifier": "Lex - EDSCallCenter",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "Goodbye",
+        "Conditions": [
+          {
+            "NextAction": "TechSupport prompt",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "TechnicalSupportIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "Lex - OrderSupplies",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "OrderSupplyIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "EDI Drill",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DrillIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "Call Center Fallback Prompt",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "a6c119fa-6b17-4ce0-848d-28e988c56e6b",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:396845391024:instance/ce462d1e-2763-4f8d-80eb-3d057b2c7d08/queue/7714a8ef-11c2-423e-810a-e9d272b9ebdb"
+      },
+      "Identifier": "25da475e-2581-4445-842a-5d835f9eccc4",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "Transfer to TechSupport",
+        "Errors": [
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Have a Safely-Dimensional Day!"
+      },
+      "Identifier": "Goodbye",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "a6c119fa-6b17-4ce0-848d-28e988c56e6b",
+        "Errors": [
+          {
+            "NextAction": "a6c119fa-6b17-4ce0-848d-28e988c56e6b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "Transfer to TechSupport",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "Goodbye",
+        "Errors": [
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "Goodbye",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Joanna"
+      },
+      "Identifier": "49843951-95ea-4a31-b628-a7b0906122cb",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "AuthStub"
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "3bb7d61c-4221-423f-9dfc-9e9d712b705c",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "49843951-95ea-4a31-b628-a7b0906122cb"
+      }
+    }
+  ]
+}

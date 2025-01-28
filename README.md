@@ -71,7 +71,7 @@ While this project is purely fictional and inspired by the imaginative world of 
 
 # EDS Main Flow - Amazon Connect Configuration
 
-![EDS Main Flow](/assets/EDS%20Main%20Flow.png)
+![EDS Main Flow](/assets/eds-2.png)
 
 Welcome to the **EDS Main Flow** repository! This project showcases the design and implementation of a robust Amazon Connect contact flow for **Extra-Dimensional Security (EDS)**, ensuring top-notch support for managing extra-dimensional incursions and customer service needs.
 

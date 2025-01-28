@@ -2,12 +2,16 @@
 node_modules/
 
 .zip
+.scratch.*
+
+.variables.*
 
 # Ignore Terraform-related files and directories
 *.tfstate
 *.tfstate.*
 .terraform/
 .terraform.lock.hcl
+.terraform.tfvars
 
 # Logs
 logs
@@ -36,3 +40,5 @@ Thumbs.db
 lambda/OrderSupplies.zip
 lambda/CheckBalance.zip
 lambda/MakePayment.zip
+NOTES/NOTES.md
+
