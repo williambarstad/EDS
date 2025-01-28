@@ -73,7 +73,7 @@ exports.lambda_handler = async (event) => {
         sessionAttributes.cart = JSON.stringify(cart);
         sessionAttributes.total = total.toFixed(2);
 
-        // Sync contact attributes
+        // Sync contact attributes THIS CNA BE REMOVED
         sessionAttributes.contactCart = sessionAttributes.cart;
         sessionAttributes.contactTotal = sessionAttributes.total;
 
