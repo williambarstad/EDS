@@ -3,7 +3,6 @@
 
 ![EDS](/assets/EDS-0.png)
 
-
 Welcome to **Extra-Dimensional Security (EDS)**, the premier service provider in safeguarding your dimension from extra-dimensional incursions (EDIs). Inspired by the world-renowned principles depicted in HBO's *Watchmen*, our call center and support services offer unparalleled protection for your reality.
 
 ## Who We Are
@@ -34,6 +33,11 @@ To provide rapid, effective, and reliable responses to extra-dimensional threats
 ### Preventative Measures
 - Regular Extra-Dimensional Incursion (EDI) drills to ensure readiness (recommended once every six weeks).
 - Advanced detection systems to identify potential threats before they materialize.
+
+### EDI Drills
+- Conduct simulated Extra-Dimensional Incursions (EDIs) to test response readiness.
+- Provides detailed feedback on response time and effectiveness.
+- Ensures all agents are prepared for real-life incidents.
 
 ## How to Get Started
 
@@ -77,18 +81,18 @@ Welcome to the **EDS Main Flow** repository! This project showcases the design a
 
 ## Overview
 
-The **EDS Main Flow** contact flow is designed to provide seamless support for EDS customers. The system offers multiple paths for handling technical support, ordering supplies, and billing inquiries, with integrations into Amazon Lex and DynamoDB for advanced functionality.
+The **EDS Main Flow** contact flow is designed to provide seamless support for EDS customers. The system offers multiple paths for handling technical support, ordering supplies, and running EDI drills, with integrations into Amazon Lex and DynamoDB for advanced functionality.
 
 ### Features
 
 - **Greeting and Instructions**: Welcomes customers with a branded message: "Securing your reality, one dimension at a time."
 - **Amazon Lex Integration**:
-  - Supports intents for technical support, supply orders, and billing.
+  - Supports intents for technical support, supply orders, and EDI drills.
   - Easily extendable with additional intents for future functionality.
 - **Dynamic Routing**:
   - Routes customers to the appropriate queue based on their intent.
   - Provides error handling and fallback options.
-- **Custom Messaging**: Engaging prompts for technical support, supply orders, and billing assistance.
+- **Custom Messaging**: Engaging prompts for technical support, supply orders, and EDI drill setup.
 - **Multi-Channel Support**: Ready for expansion into voice, chat, and other channels supported by Amazon Connect.
 - **DynamoDB Integration** (future enhancement):
   - Supplies ordering integrates with DynamoDB to create and store records.
@@ -100,15 +104,15 @@ The flow is visualized with decision points, prompts, and Lex integrations:
 - **Intent Processing**:
   - Technical Support → Transfers to a support queue.
   - Order Supplies → Prompts for items and processes orders.
-  - Billing → Provides current balance and accepts payments.
+  - EDI Drill → Guides through setup and simulates a drill.
 
 ### Requirements
 
-- **Amazon Connect**: Configured instance with queues for Technical Support and Billing.
+- **Amazon Connect**: Configured instance with queues for Technical Support and EDI drills.
 - **Amazon Lex**: Bot named `EDSCallCenter` with intents for:
   - `TechnicalSupportIntent`
   - `OrderSupplyIntent`
-  - `BillingIntent`
+  - `EDIDrillIntent`
 - **DynamoDB**: Table for tracking order records (future implementation).
 
 ### Getting Started
@@ -123,7 +127,7 @@ The flow is visualized with decision points, prompts, and Lex integrations:
    - Ensure intents and aliases match the flow configuration.
 
 3. **Set Up Queues**:
-   - Add queues for `TechnicalSupport` and `Billing` in Amazon Connect.
+   - Add queues for `TechnicalSupport` and `EDIDrill` in Amazon Connect.
 
 4. **Testing**:
    - Test each intent path to verify smooth transitions and error handling.
@@ -132,8 +136,6 @@ The flow is visualized with decision points, prompts, and Lex integrations:
 
 - **Supply Ordering System**:
   - Integrate with a Lambda function to handle DynamoDB operations.
-- **Billing Automation**:
-  - Add payment processing through third-party integrations.
 - **Enhanced Reporting**:
   - Leverage Contact Lens for detailed analytics on customer interactions.
 
@@ -143,6 +145,3 @@ The JSON configuration contains:
 - **Metadata**: Positions and descriptions for visual flow editing.
 - **Actions**: Definitions for prompts, transitions, and integrations.
 
-### Contribution
-
-We welcome contributions to enhance the EDS Main Flow. Feel free to submit issues or pull requests.
